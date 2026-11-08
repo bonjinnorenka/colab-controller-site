@@ -1,0 +1,18 @@
+{
+  "id": "colab-controller-site",
+  "env": "prod",
+  "runtime": "static",
+  "root": "__APP_ROOT__",
+  "index": "index.html",
+  "cache_control": "public, max-age=60",
+  "resources": {
+    "dbs": [],
+    "custom_domains": []
+  },
+  "hosts_extra": [],
+  "secrets": [],
+  "http_allow": [],
+  "app_allow": [],
+  "schedules": [],
+  "max_concurrency": 8
+}
