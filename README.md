@@ -21,9 +21,12 @@ The controller keeps its own App ID, DB, secrets, cron schedule, and worker
 integration; updating this site never restarts or reconfigures it.
 
 The published URL is assigned by the provisioner and printed by
-`sgctl apply`. For an `env: "prod"` spec it is normally
-`https://colab-controller-site.sugakura.ryokuryu.com/`; always treat the
-`sgctl` output as authoritative.
+`sgctl apply`. The verified production URL is:
+
+- Homepage: <https://colab-controller-site.sugakura.ryokuryu.com/>
+- Privacy policy: <https://colab-controller-site.sugakura.ryokuryu.com/privacy.html>
+
+Always treat the `sgctl` output as authoritative if the app is recreated.
 
 ## Layout
 
@@ -99,6 +102,6 @@ To stop publishing without deleting the app, remove files from
 
 ## GitHub Pages
 
-GitHub Pages is no longer the publishing path. The GitHub repository is kept
-for source management; the old `bonjinnorenka.github.io/colab-controller-site/`
-URL is not redirected.
+GitHub Pages has been disabled. The GitHub repository is kept for source
+management; the old `bonjinnorenka.github.io/colab-controller-site/` URL is
+not redirected.
