@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>colab-controller — Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, sans-serif; max-width: 760px; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.65; }
+    h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; }
+    .muted { opacity: 0.75; }
+    a { color: #2563eb; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #8884; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Effective date: 2026-11-08</p>
+
+  <p>
+    This privacy policy describes how <strong>colab-controller</strong>
+    ("the application") handles information when the account owner authorizes
+    it to use Google Colab.
+  </p>
+
+  <h2>1. Information accessed</h2>
+  <p>The application requests the following Google OAuth scopes:</p>
+  <ul>
+    <li><code>openid</code> — identify the signed-in Google account.</li>
+    <li><code>https://www.googleapis.com/auth/userinfo.email</code> — read the account email address.</li>
+    <li><code>https://www.googleapis.com/auth/cloud-platform</code> — required by the Google Cloud SDK's Application Default Credentials login flow.</li>
+    <li><code>https://www.googleapis.com/auth/colaboratory</code> — allocate, inspect, and release Colab runtimes.</li>
+  </ul>
+  <p>
+    The application does not request access to Google Drive, Gmail, Contacts,
+    Calendar, or other Google account data.
+  </p>
+
+  <h2>2. How information is used</h2>
+  <ul>
+    <li>To authenticate the account owner with Google.</li>
+    <li>To allocate, inspect, bootstrap, and release Colab runtimes.</li>
+    <li>To record operational state (session IDs, runtime endpoints, operation status) for recovery and auditing.</li>
+  </ul>
+
+  <h2>3. Storage and retention</h2>
+  <p>
+    OAuth credentials (client ID, client secret, and refresh token) are stored
+    only on the account owner's self-hosted system or in the owner's private
+    secret store, with restricted file permissions. They are not published to
+    this website and are not sent to third parties.
+  </p>
+  <p>
+    Operational metadata is retained only as long as needed for recovery,
+    auditing, and the owner's configured retention period. Runtime proxy tokens
+    are short-lived and are not stored in the controller database.
+  </p>
+
+  <h2>4. Sharing</h2>
+  <p>
+    The application does not sell, rent, or share personal information with
+    third parties. Data is sent to Google only as required to use the Google
+    APIs described above.
+  </p>
+
+  <h2>5. Security</h2>
+  <p>
+    Access is limited to the account owner. Credentials are protected with
+    file permissions and secret-store controls. The application does not log
+    OAuth tokens or client secrets.
+  </p>
+
+  <h2>6. Your choices and revocation</h2>
+  <p>
+    You can revoke the application's access at any time from your Google
+    Account's third-party access settings:
+    <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.
+    Revoking access invalidates the refresh token. You can also delete the
+    locally stored credentials and operational data.
+  </p>
+
+  <h2>7. Contact</h2>
+  <p>
+    For privacy questions or deletion requests, contact
+    <a href="mailto:ryokuryukaiax@gmail.com">ryokuryukaiax@gmail.com</a>.
+  </p>
+
+  <footer>
+    <p><a href="index.html">Back to colab-controller</a></p>
+  </footer>
+</body>
+</html>
